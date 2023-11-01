@@ -1,0 +1,64 @@
+/* cart items */
+
+.cart-page{
+    margin: 80px auto;
+    max-width: 80%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+} 
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 2px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width:80px;
+    height:80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top:3px solid #ff523b;
+    width: 100%;
+    max-width: 450px;
+}
+/* the only last child of td is price  so it is applying at rignt */
+td:last-child{
+    text-align: right;      
+}
+/* th means head the .....for th the lastchild is price anee word so it is applying to that only */
+th:last-child{
+    text-align: right;
+}
+
+
+@media only screen and (max-width:430px){
+       .cart-info p{
+        font-size: 14px;
+       }
+}
